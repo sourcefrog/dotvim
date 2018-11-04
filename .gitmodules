@@ -7,3 +7,6 @@
 [submodule "pack/mbp-plugins/start/rust.vim"]
 	path = pack/mbp-plugins/start/rust.vim
 	url = https://github.com/rust-lang/rust.vim
+[submodule "pack/mbp-plugins/start/pack/mbp-plugins/start/jellybeans.vim"]
+	path = pack/mbp-plugins/start/pack/mbp-plugins/start/jellybeans.vim
+	url = https://github.com/nanotech/jellybeans.vim.git
