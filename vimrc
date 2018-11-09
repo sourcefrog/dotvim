@@ -100,7 +100,11 @@ set nowrapscan
 
 set rulerformat=%19(%03P\ %5l/%-5L\ %3v%)
 " let &statusline = &rulerformat . "  %f\  #%n\ %m%w%h%y%r%=%{strftime(\"%a\ %l:%M%P\")}"
-let &statusline = &rulerformat . "  %f  #%n\ %m%w%h%y%r %="
+let &statusline = &rulerformat . "  %f  #%n\ %m%w%h%y%r "
+
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
 
 " show arrows in current split marker
 set fillchars+=stl:^
@@ -247,3 +251,8 @@ imap <S-Insert> "+p
 au BufNewFile,BufRead *.go setlocal noet ts=4 sw=4 sts=4
 
 colorscheme jellybeans
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
