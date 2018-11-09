@@ -75,15 +75,12 @@ nohlsearch " don't show whatever we were looking for last time until we search a
 set nohlsearch
 set incsearch
 set linebreak
-if hostname() != "ozlabs"
-	set mouse=a
-endif
 set nowrapscan
 set number
 set numberwidth=8
-set path=,./tests,/usr/lib/python2.5/,~,~/bzr/trunk
+set path=,./tests,~
 set noruler
-set scrolljump=6
+set scrolljump=-25
 set scrolloff=2
 set shiftround
 set showbreak=
@@ -97,6 +94,7 @@ set wildignore+=*.py[co],*~
 set wildmenu
 set wildmode=longest:full,full
 set nowrapscan
+set belloff=showmatch,esc
 
 set rulerformat=%19(%03P\ %5l/%-5L\ %3v%)
 " let &statusline = &rulerformat . "  %f\  #%n\ %m%w%h%y%r%=%{strftime(\"%a\ %l:%M%P\")}"
