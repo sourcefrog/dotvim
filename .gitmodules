@@ -22,3 +22,6 @@
 [submodule "pack/mbp-plugins/start/vim-sensible"]
 	path = pack/mbp-plugins/start/vim-sensible
 	url = git://github.com/tpope/vim-sensible.git
+[submodule "pack/mbp-plugins/start/tagbar"]
+	path = pack/mbp-plugins/start/tagbar
+	url = git://github.com/majutsushi/tagbar
